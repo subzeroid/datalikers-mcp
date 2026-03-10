@@ -1,0 +1,48 @@
+{
+  "name": "datalikers-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for DataLikers — Instagram & TikTok data API for AI assistants",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "datalikers-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc && chmod +x dist/index.js",
+    "test": "node --import tsx --test test/*.test.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "datalikers",
+    "instagram",
+    "tiktok",
+    "social-media",
+    "api",
+    "claude",
+    "ai",
+    "model-context-protocol"
+  ],
+  "author": "DataLikers",
+  "license": "MIT",
+  "homepage": "https://datalikers.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/user/datalikers-mcp.git"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.7.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
