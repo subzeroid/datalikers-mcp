@@ -22,7 +22,7 @@ if (!API_KEY) {
 }
 
 async function main(): Promise<void> {
-  const remote = new Client({ name: "datalikers-mcp", version: "1.0.0" });
+  const remote = new Client({ name: "datalikers-mcp", version: "1.0.1" });
 
   await remote.connect(
     new StreamableHTTPClientTransport(new URL(BASE_URL), {
@@ -35,7 +35,7 @@ async function main(): Promise<void> {
   const { tools } = await remote.listTools();
 
   const server = new Server(
-    { name: "datalikers", version: "1.0.0" },
+    { name: "datalikers", version: "1.0.1" },
     { capabilities: { tools: {} } }
   );
 

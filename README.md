@@ -6,6 +6,12 @@
 
 MCP server for [DataLikers](https://datalikers.com) — access Instagram & TikTok data directly from Claude, Cursor, and other AI assistants. Available on npm: [`datalikers-mcp`](https://www.npmjs.com/package/datalikers-mcp).
 
+## Get 100 Free API Requests
+
+**[Sign up with this link](https://datalikers.com/p/1by27bwg)** and get **100 free DataLikers requests** — no credit card required. Enough to wire up the MCP server, try a few prompts in Claude/Cursor/Codex, and evaluate the data quality before committing.
+
+> **[Get your free 100 requests here](https://datalikers.com/p/1by27bwg)**
+
 <a href="https://glama.ai/mcp/servers/@subzeroid/datalikers-mcp"><img width="380" height="200" src="https://glama.ai/mcp/servers/@subzeroid/datalikers-mcp/badge" alt="DataLikers MCP server" /></a>
 
 ## What is DataLikers?
