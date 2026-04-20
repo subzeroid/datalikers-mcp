@@ -11,7 +11,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsc && chmod +x dist/index.js",
+    "build": "tsc && node -e \"try{require('fs').chmodSync('dist/index.js',0o755)}catch(e){}\"",
     "test": "node --import tsx --test test/*.test.ts",
     "prepublishOnly": "npm run build"
   },
@@ -27,22 +27,25 @@
     "ai",
     "model-context-protocol"
   ],
-  "author": "DataLikers",
+  "author": "DataLikers <support@datalikers.com>",
   "license": "MIT",
   "homepage": "https://datalikers.com",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/user/datalikers-mcp.git"
+    "url": "git+https://github.com/subzeroid/datalikers-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/subzeroid/datalikers-mcp/issues"
   },
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.12.0"
+    "@modelcontextprotocol/sdk": "^1.29.0"
   },
   "devDependencies": {
-    "@types/node": "^22.0.0",
+    "@types/node": "^25.6.0",
     "tsx": "^4.21.0",
-    "typescript": "^5.7.0"
+    "typescript": "^6.0.3"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=20"
   }
 }

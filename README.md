@@ -1,11 +1,12 @@
 # DataLikers MCP Server
 
 [![npm version](https://img.shields.io/npm/v/datalikers-mcp.svg)](https://www.npmjs.com/package/datalikers-mcp)
+[![npm downloads](https://img.shields.io/npm/dm/datalikers-mcp.svg)](https://www.npmjs.com/package/datalikers-mcp)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-MCP server for [DataLikers](https://datalikers.com) — access Instagram & TikTok data directly from Claude, Cursor, and other AI assistants.
+MCP server for [DataLikers](https://datalikers.com) — access Instagram & TikTok data directly from Claude, Cursor, and other AI assistants. Available on npm: [`datalikers-mcp`](https://www.npmjs.com/package/datalikers-mcp).
 
-<a href="https://glama.ai/mcp/servers/@user/datalikers-mcp"><img width="380" height="200" src="https://glama.ai/mcp/servers/@user/datalikers-mcp/badge" alt="DataLikers MCP server" /></a>
+<a href="https://glama.ai/mcp/servers/@subzeroid/datalikers-mcp"><img width="380" height="200" src="https://glama.ai/mcp/servers/@subzeroid/datalikers-mcp/badge" alt="DataLikers MCP server" /></a>
 
 ## What is DataLikers?
 
@@ -151,7 +152,7 @@ Add to `~/.codeium/windsurf/mcp_config.json`:
 ## Development
 
 ```bash
-git clone https://github.com/user/datalikers-mcp.git
+git clone https://github.com/subzeroid/datalikers-mcp.git
 cd datalikers-mcp
 npm install
 npm run build
