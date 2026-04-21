@@ -12,7 +12,8 @@
   ],
   "scripts": {
     "build": "tsc && node -e \"try{require('fs').chmodSync('dist/index.js',0o755)}catch(e){}\"",
-    "test": "node --import tsx --test test/*.test.ts",
+    "test": "node --import tsx --test test/proxy.test.ts",
+    "test:e2e": "node --import tsx --test test/e2e.test.ts",
     "prepublishOnly": "npm run build"
   },
   "keywords": [

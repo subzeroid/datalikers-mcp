@@ -1,0 +1,35 @@
+name: E2E
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    # Weekly, Monday 08:00 UTC
+    - cron: "0 8 * * 1"
+  workflow_dispatch:
+
+jobs:
+  e2e:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+
+      - run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Unit + mock smoke tests
+        run: npm test
+
+      - name: E2E against mcp.datalikers.com
+        run: npm run test:e2e
+        env:
+          DATALIKERS_API_KEY: ${{ secrets.DATALIKERS_API_KEY }}
