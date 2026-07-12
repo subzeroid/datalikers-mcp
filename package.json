@@ -1,6 +1,7 @@
 {
   "name": "datalikers-mcp",
-  "version": "1.0.1",
+  "version": "1.0.2",
+  "mcpName": "io.github.subzeroid/datalikers-mcp",
   "description": "MCP server for DataLikers — Instagram & TikTok data API for AI assistants",
   "type": "module",
   "main": "dist/index.js",
