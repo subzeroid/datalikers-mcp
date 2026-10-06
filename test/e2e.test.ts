@@ -59,7 +59,9 @@ describe(
       const text = res.content[0].text;
       assert.ok(text.length > 200, `response too small: ${text.length} bytes`);
       const payload = JSON.parse(text);
-      const user = payload.user ?? payload;
+      // The hosted server wraps user-generated content in an envelope
+      // ({ _untrusted, _warning, data }) so agents treat it as untrusted.
+      const user = payload.data ?? payload.user ?? payload;
       assert.equal(user.username, "instagram");
     });
   },
